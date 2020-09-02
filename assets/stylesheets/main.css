@@ -1,3 +1,7 @@
+body {
+  font-family: Arial;
+}
+
 /* NAV */
 
 nav {
@@ -6,10 +10,64 @@ nav {
   top: 0;
   width: 100%;
   padding: 10px 0 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
+nav img {
+  height: 24px;
+}
+
+#menu-icon {
+  margin: 0 20px 0 20px;
+}
+
+nav .location {
+  font-size: 10px;
+  font-family: Roboto, Arial;
+  vertical-align: top;
+}
+
+nav .center {
+  font-size: 0;
+}
+
+nav .search {
+  vertical-align: middle;
+  border: 1px solid rgb(190, 190, 190);
+  border-radius: 2px 0 0 2px;
+  height: 30px;
+  width: 500px;
+  font-size: 16px;
+}
+
+#search-icon {
+  vertical-align: middle;
+  height: 16px;
+  padding: 8px 24px 8px 24px;
+  border: 1px solid rgb(190, 190, 190);
+  border-left-width: 0;
+  border-radius: 0 2px 2px 0;
+  background-color: rgb(240, 240, 240);
+}
+
+#apps-icon,
+#camera-icon,
+#notif-icon,
+#user-icon {
+  margin-right: 20px;
+  vertical-align: middle;
+}
+
+#user-icon {
+  height: 30px;
+}
+
+/*MAIN*/
+
 .body {
-  margin-top: 36px;
+  margin-top: 54px;
 }
 
 /*VIDEO*/
