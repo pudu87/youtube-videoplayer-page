@@ -38,7 +38,7 @@ nav .search {
   border: 1px solid rgb(190, 190, 190);
   border-radius: 2px 0 0 2px;
   height: 30px;
-  width: 500px;
+  width: 550px;
   font-size: 16px;
 }
 
@@ -67,7 +67,7 @@ nav .search {
 /*MAIN*/
 
 .body {
-  margin-top: 54px;
+  margin: 54px 20px 20px 20px;
 }
 
 /*VIDEO*/
@@ -76,15 +76,160 @@ nav .search {
   background-color: rgb(215, 215, 255);
   float: left;
   width: 70%;
+  text-align: right;
 }
 
+.main img {
+  height: 20px;
+}
+
+.main .container {
+  margin-right: 8px;
+  width: 90%;
+  display: inline-block;
+}
+
+.videoframe {
+  height: 500px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+/*VIDEODATA*/
+
+.videodata {
+  padding: 20px 0 20px 0;
+  text-align: left;
+  width: 100%;
+}
+
+.location-pin {
+  height: 16px;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+.location img,
+.location p {
+  display: inline-block;
+  color: blue;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.title {
+  font-size: 18px;
+  margin: 4px 0 4px 0;
+}
+
+.views-options {
+  padding: 8px 0 12px 0;
+  color: grey;
+  border-bottom: 1px solid rgb(180, 180, 180);
+  overflow: auto;
+  font-size: 14px;
+}
+
+.views {
+  float: left;
+  position: relative;
+  top: 3px;
+}
+
+.options {
+  float: right;
+  vertical-align: bottom;
+}
+
+.views p,
+.options p,
+.options img {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.options p {
+  padding-right: 20px;
+  text-transform: uppercase;
+}
+
+.options img {
+  padding-right: 5px;
+}
+
+.likes {
+  rotate: 180deg;
+  transform: scaleX(-1);
+}
+
+/*OWNER*/
+
+.owner {
+  width: 100%;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgb(180, 180, 180);
+  text-align: left;
+}
+
+.owner img {
+  height: 60px;
+  vertical-align: top;
+}
+
+.owner-info {
+  padding: 15px 5px 0 10px;
+  display: inline-block;
+  font-size: 14px;
+}
+
+.username {
+  font-weight: bold;
+}
+
+.subscribers {
+  color: grey;
+  margin: 2px 0 20px 0;
+}
+
+.hashtags {
+  color: blue;
+}
+
+.subscribe {
+  float: right;
+  padding: 10px 20px 10px 20px;
+  color: white;
+  text-transform: uppercase;
+  font-size: 16px;
+  background-color: red;
+}
+
+/*
+<section class="owner">
+  <img id="user-icon" src="assets/images/nav/user-icon.png" alt="user-icon">
+  
+  <div class="owner-info">
+    <p class="username">El H Coachings</p>
+    <p class="subscribers">1.52K subscribers</p>
+    <p class="subscribe">Subscribe</p>
+    <p class="hashtags">#marcha #chile #protesta</p>
+  </div>
+</section>*/
 
 /*COMMENTS*/
 
+.comments {
+  width: 100%;
+  margin: 20px;
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: left;
+  font-style: italic;
+}
 
-/*PLAYLIST*/
+/*SIDEBAR*/
 
-.playlist {
+.sidebar {
   background-color: rgb(236, 188, 188);
   float: right;
   width: 30%;
