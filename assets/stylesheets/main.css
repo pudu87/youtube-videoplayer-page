@@ -1,11 +1,12 @@
 body {
   font-family: Arial;
+  background-color: rgb(250, 250, 250);
 }
 
 /* NAV */
 
 nav {
-  background-color: rgb(238, 238, 194);
+  background-color: white;
   position: fixed;
   top: 0;
   width: 100%;
@@ -66,14 +67,14 @@ nav .search {
 
 /*MAIN*/
 
-.body {
+.wrapper {
   margin: 54px 20px 20px 20px;
+  overflow: auto;
 }
 
 /*VIDEO*/
 
 .main {
-  background-color: rgb(215, 215, 255);
   float: left;
   width: 70%;
   text-align: right;
@@ -136,7 +137,7 @@ nav .search {
   top: 3px;
 }
 
-.options {
+.main .options {
   float: right;
   vertical-align: bottom;
 }
@@ -148,7 +149,7 @@ nav .search {
   vertical-align: middle;
 }
 
-.options p {
+.main .options p {
   padding-right: 20px;
   text-transform: uppercase;
 }
@@ -164,25 +165,25 @@ nav .search {
 
 /*OWNER*/
 
-.owner {
+.main .owner {
   width: 100%;
   padding-bottom: 20px;
   border-bottom: 1px solid rgb(180, 180, 180);
   text-align: left;
 }
 
-.owner img {
+.main .owner img {
   height: 60px;
   vertical-align: top;
 }
 
-.owner-info {
+.main .owner-info {
   padding: 15px 5px 0 10px;
   display: inline-block;
   font-size: 14px;
 }
 
-.username {
+.main .username {
   font-weight: bold;
 }
 
@@ -204,18 +205,6 @@ nav .search {
   background-color: red;
 }
 
-/*
-<section class="owner">
-  <img id="user-icon" src="assets/images/nav/user-icon.png" alt="user-icon">
-  
-  <div class="owner-info">
-    <p class="username">El H Coachings</p>
-    <p class="subscribers">1.52K subscribers</p>
-    <p class="subscribe">Subscribe</p>
-    <p class="hashtags">#marcha #chile #protesta</p>
-  </div>
-</section>*/
-
 /*COMMENTS*/
 
 .comments {
@@ -230,7 +219,61 @@ nav .search {
 /*SIDEBAR*/
 
 .sidebar {
-  background-color: rgb(236, 188, 188);
   float: right;
   width: 30%;
+}
+
+.sidebar .container {
+  margin: 25px 30px 20px 8px;
+}
+
+.next {
+  padding-bottom: 8px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid rgb(180, 180, 180);
+  overflow: auto;
+}
+
+.sidebar .options {
+  display: inline-block;
+  width: 100%;
+}
+
+.autoplay {
+  float: right;
+  text-transform: uppercase;
+  color: grey;
+  text-align: right;
+  font-size: 12px;
+}
+
+#autoplay-icon {
+  height: 20px;
+}
+
+.sidebar article {
+  margin: 8px 10px 8px 0;
+  color: grey;
+  font-size: 12px;
+  overflow: auto;
+}
+
+article img {
+  height: 94px;
+  float: left;
+  margin-right: 4px;
+}
+
+article .title {
+  color: black;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+article .title {
+  padding-bottom: 6px;
+}
+
+article .owner {
+  padding-bottom: 3px;
 }
